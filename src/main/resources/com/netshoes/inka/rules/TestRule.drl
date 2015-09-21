@@ -1,0 +1,10 @@
+package com.netshoes.inka.rules;
+
+import com.netshoes.inka.fact.Message;
+
+rule "Hello"
+    when
+        $m: Message();
+    then
+        $m.setText("Hello 0");
+end
